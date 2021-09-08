@@ -1,10 +1,11 @@
-let akanForm = document.getElementById("formAkan");
+let akanForm = document.getElementById("form");
 akanForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
     gender = document.getElementById("gender").value
     dateOfBirth = document.getElementById("date").value
     dateOfBirth = new Date(dateOfBirth);
+   
     
     CC = yearOfBirth.toString().substr(0, 2);
     YY = yearOfBirth.toString().substr(2, 2);
@@ -19,68 +20,69 @@ akanForm.addEventListener("submit", (e) => {
     let akanName;
 
     maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+    femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 
 
     if (dayOfTheWeek == 0 && gender == "female") {
         
-        akanName = femaleAkanNames[0];
+        akanName = femaleNames[0];
     } else if (dayOfTheWeek == 0 && gender == "male") {
         
-        akanName = maleAkanNames[0];
+        akanName = maleNames[0];
 
 
     } else if (dayOfTheWeek == 1 && gender == "female") {
         
-        akanName = femaleAkanNames[1];
+        akanName = femaleNames[1];
     } else if (dayOfTheWeek == 1 && gender == "male") {
         
-        akanName = maleAkanNames[1];
+        akanName = maleNames[1];
 
 
     } else if (dayOfTheWeek == 2 && gender == "female") {
         
-        akanName = femaleAkanNames[2];
+        akanName = femaleNames[2];
     } else if (dayOfTheWeek == 2 && gender == "male") {
         
-        akanName = maleAkanNames[2];
+        akanName = maleNames[2];
 
 
     } else if (dayOfTheWeek == 3 && gender == "female") {
         
-        akanName = femaleAkanNames[3];
+        akanName = femaleNames[3];
     } else if (dayOfTheWeek == 3 && gender == "male") {
         
-        akanName = maleAkanNames[3];
+        akanName = maleNames[3];
 
 
     } else if (dayOfTheWeek == 4 && gender == "female") {
         
-        akanName = femaleAkanNames[4];
+        akanName = femaleNames[4];
     } else if (dayOfTheWeek == 4 && gender == "male") {
         
-        akanName = maleAkanNames[4];
+        akanName = maleNames[4];
 
 
     } else if (dayOfTheWeek == 5 && gender == "female") {
         
-        akanName = femaleAkanNames[5];
+        akanName = femaleNames[5];
     } else if (dayOfTheWeek == 5 && gender == "male") {
         
-        akanName = maleAkanNames[5];
+        akanName = maleNames[5];
 
 
     } else if (dayOfTheWeek == 6 && gender == "female") {
         
-        akanName = femaleAkanNames[6];
+        akanName = femaleNames[6];
     } else if (dayOfTheWeek == 6 && gender == "male") {
         
-        akanName = maleAkanNames[6];
+        akanName = maleNames[6];
     }
 
 
-    let result = document.getElementById("result").innerHTML = "Drumrolls!!! <br>You were born on a " + bornDay + " your Akan name is " + akanName + "!"
-    document.getElementById("akanForm").reset();
+    result = document.getElementById("result").innerHTML = "Your Akan name is " + akanName + "!"
+    document.getElementById("form").reset();
 });
     
 
