@@ -23,6 +23,12 @@ akanForm.addEventListener("submit", (e) => {
 
     femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     
-    let bornDay;
+    if (dayOfTheWeek == 0 && gender == "female") {
+        
+        akanName = femaleAkanNames[0];
+
+    } else if (dayOfTheWeek == 0 && gender == "male") {
+
+        akanName = maleAkanNames[0];
 
 }
