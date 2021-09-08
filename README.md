@@ -15,7 +15,7 @@ This website used html JavaScript and css languages to make it.everything was do
 
 ****
 ### 3.Live link
-https://davospots.github.io/Project1/
+https://davospots.github.io/akanname/
 ****
 ### 4.Copyright
 This website is free for all to view ,edit any and all styles but excluding the content or the information on the website
