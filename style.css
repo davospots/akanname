@@ -13,18 +13,16 @@ table{
     margin-right: auto;
     margin-left: auto;
     border: solid;
-    border-collapse: collapse;
     border-spacing: 5px
 }
-th{
-    display: table-cell;
-}   
+
+
 .table , th {
-    border-collapse: collapse;
     font-style:inherit;
-    font-weight: bold;
+     font-weight: bold;
+    
 }
 .table ,td{
-    border-collapse: collapse;
     padding: 5px;
 }
+
