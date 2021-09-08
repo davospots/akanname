@@ -1,4 +1,9 @@
-const daysOfTheWeek = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+let akanForm = document.getElementById("formAkan");
+akanForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+        
+
 const maleNames = ["kwasi", "Kwandwo", "Kwabena", "kwaku", "yaw", "kofi", "kwame"];
 const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
@@ -10,4 +15,6 @@ function birthIndex(d, m, yr) {
     let dayOfTheWeek = Math.floor((((cc / 4) - 2 * cc - 1) + ((5 * yy / 4)) + ((26 * (mm + 1) / 10)) + dd) % 7);
     return dayOfTheWeek;
 }
+
+
 
