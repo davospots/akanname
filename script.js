@@ -2,19 +2,15 @@ let akanForm = document.getElementById("formAkan");
 akanForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-        
+    gender = document.getElementById("gender").value
+    dateOfBirth = document.getElementById("date").value
+    dateOfBirth = new Date(dateOfBirth);
+    
+    CC = yearOfBirth.toString().substr(0, 2);
+    YY = yearOfBirth.toString().substr(2, 2);
+    MM = birthMonth
+    DD = dayOfBirth
 
-const maleNames = ["kwasi", "Kwandwo", "Kwabena", "kwaku", "yaw", "kofi", "kwame"];
-const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-
-function birthIndex(d, m, yr) {
-    let dd = parseInt(d);
-    let mm = parseInt(m);
-    let cc = Math.floor(yr / 100);
-    let yy = parseInt(yr.slice(2, 4));
-    let dayOfTheWeek = Math.floor((((cc / 4) - 2 * cc - 1) + ((5 * yy / 4)) + ((26 * (mm + 1) / 10)) + dd) % 7);
-    return dayOfTheWeek;
-}
 
 
 
